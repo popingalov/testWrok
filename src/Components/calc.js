@@ -1,5 +1,6 @@
 import opc from './optionc.json';
 import { useState, useEffect } from 'react';
+import { lab } from 'color-convert/conversions';
 const optionc = opc[0];
 
 export default function Calc({ arg }) {
@@ -57,11 +58,14 @@ export default function Calc({ arg }) {
 
   return (
     <>
-      <input
-        type="number"
-        value={rounding}
-        onChange={e => setrounding(e.target.value)}
-      />
+      <lable>
+        Rounding
+        <input
+          type="number"
+          value={rounding}
+          onChange={e => setrounding(e.target.value)}
+        />
+      </lable>
       <div>
         <button onClick={open}>{startMetr}</button>
         <input
