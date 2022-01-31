@@ -5,9 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+#root {
+  width: 100vw;
 }

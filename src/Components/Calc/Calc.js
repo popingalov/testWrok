@@ -1,10 +1,7 @@
-import opc from './optionc.json';
+import opc from './convertoptionc.json';
 import { useState, useEffect } from 'react';
-import { lab } from 'color-convert/conversions';
 const optionc = opc[0];
-
 export default function Calc({ arg }) {
-  const { distance, convert_to } = arg;
   const [state, setstate] = useState();
   const [togle, settogle] = useState(false);
   const [startMetr, setstartMetr] = useState('m');
@@ -13,13 +10,6 @@ export default function Calc({ arg }) {
   const [valueEnd, setValueEnd] = useState(1);
   const [result, setResult] = useState({ unit: 'm', value: 1 });
   const [rounding, setrounding] = useState(2);
-  /* const convert = (w, to) => {
-    const { unit, value } = w;
-    const toConvert = optionc[unit];
-    const whot = toConvert[to];
-    const convertValue = value * whot;
-    setResult({ unit: to, value: convertValue });
-  }; */
 
   useEffect(() => {
     const whot = optionc[startMetr];
@@ -27,6 +17,7 @@ export default function Calc({ arg }) {
     const convertValue = valueStart * to;
 
     setResult({ unit: endtMetr, value: round(convertValue) });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [valueStart, endtMetr, startMetr]);
 
   useEffect(() => {
@@ -34,6 +25,7 @@ export default function Calc({ arg }) {
     const to = whot[endtMetr];
     const convertValue = valueEnd / to;
     setValueStart(round(convertValue));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [valueEnd]);
 
   const round = value => {
@@ -58,14 +50,14 @@ export default function Calc({ arg }) {
 
   return (
     <>
-      <lable>
-        Rounding
+      <label>
+        rounding
         <input
           type="number"
           value={rounding}
           onChange={e => setrounding(e.target.value)}
         />
-      </lable>
+      </label>
       <div>
         <button onClick={open}>{startMetr}</button>
         <input
