@@ -1,6 +1,16 @@
 import s from './todoClasses.module.css';
-console.log([s.colHeader, s.start]);
+const words = ['banana', 'ping', 'grapp', 'banana', 'grapp', 'banana'];
 
+function summ(a, b) {
+  return a + b;
+}
+
+function calc(func) {
+  return a => {
+    return b => func(a, b);
+  };
+}
+console.log(calc(summ)(3)(11));
 const Todo = () => {
   return (
     <div className={s.todo}>

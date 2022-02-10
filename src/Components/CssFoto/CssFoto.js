@@ -1,4 +1,5 @@
 import './cssFoto.css';
+import { useRef } from 'react';
 const backImg = [
   'https://media.istockphoto.com/photos/camogli-liguria-italy-april-13-2016-ferrari-california-t-picture-id528418730?k=20&m=528418730&s=612x612&w=0&h=94D1eeiZmgAEFR8Fj3sfYVjV2rvuYHgUYOdYo8A8-Cw=',
   'https://media.istockphoto.com/photos/lamborghini-aventador-picture-id522310912?k=20&m=522310912&s=612x612&w=0&h=RDkmLxozCf0i5f9Z6jX-s6RSwkX3QHWugG426NcW5rs=',
@@ -9,18 +10,19 @@ const backImg = [
 const nameCar = ['Ferrari', 'Lamborghini', 'Camaro', 'Tesla'];
 
 const CssFoto = () => {
+  const container = useRef();
   function toggle(_, ind) {
     if (test === ind) return;
-    const slides = document.querySelectorAll('.container');
-    const element = slides[0].children[ind];
-    const preElement = slides[0].children[test];
+    const slides = container.current;
+    const element = slides.children[ind];
+    const preElement = slides.children[test];
     element.classList.add('active');
     preElement.classList.remove('active');
     test = ind;
   }
   let test = 0;
   return (
-    <div className="container">
+    <div ref={container} className="container">
       {backImg.map((e, ind) => {
         return (
           <div
