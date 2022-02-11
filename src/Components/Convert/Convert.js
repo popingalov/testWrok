@@ -34,7 +34,7 @@ export default function Convert() {
 
       const calc = round(st / en) * startValue;
       setResults({ result: calc });
-      //   setEndValue(calc);
+
       setObj(result);
     })();
   }, []);
@@ -46,9 +46,16 @@ export default function Convert() {
 
     let st = obj[startInp.value];
     let en = obj[endInp.value];
-    const calc = round((st / en) * startValue);
+    const check = startInp.value.length === 3 && endInp.value.length === 3;
 
-    setResults({ result: calc });
+    if (check) {
+      if (!st || !en) {
+        alert('нет таковой валюты');
+        return;
+      }
+      const calc = round((st / en) * startValue);
+      setResults({ result: calc });
+    }
   }, [startValue, startInp.value, endInp.value]);
 
   useEffect(() => {
@@ -60,7 +67,6 @@ export default function Convert() {
     let en = obj[endInp.value];
 
     const calc = endValue / (st / en);
-
     setStartValue(calc);
   }, [endValue]);
 
