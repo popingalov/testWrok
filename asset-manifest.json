@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/testWrok/static/css/main.027366a9.chunk.css",
-    "main.js": "/testWrok/static/js/main.8a5b9911.chunk.js",
-    "main.js.map": "/testWrok/static/js/main.8a5b9911.chunk.js.map",
+    "main.css": "/testWrok/static/css/main.d8f848da.chunk.css",
+    "main.js": "/testWrok/static/js/main.ed75dff7.chunk.js",
+    "main.js.map": "/testWrok/static/js/main.ed75dff7.chunk.js.map",
     "runtime-main.js": "/testWrok/static/js/runtime-main.10db168f.js",
     "runtime-main.js.map": "/testWrok/static/js/runtime-main.10db168f.js.map",
     "static/css/2.c79dbdbc.chunk.css": "/testWrok/static/css/2.c79dbdbc.chunk.css",
-    "static/js/2.cb003bcb.chunk.js": "/testWrok/static/js/2.cb003bcb.chunk.js",
-    "static/js/2.cb003bcb.chunk.js.map": "/testWrok/static/js/2.cb003bcb.chunk.js.map",
+    "static/js/2.b666e95e.chunk.js": "/testWrok/static/js/2.b666e95e.chunk.js",
+    "static/js/2.b666e95e.chunk.js.map": "/testWrok/static/js/2.b666e95e.chunk.js.map",
     "index.html": "/testWrok/index.html",
     "static/css/2.c79dbdbc.chunk.css.map": "/testWrok/static/css/2.c79dbdbc.chunk.css.map",
-    "static/css/main.027366a9.chunk.css.map": "/testWrok/static/css/main.027366a9.chunk.css.map",
-    "static/js/2.cb003bcb.chunk.js.LICENSE.txt": "/testWrok/static/js/2.cb003bcb.chunk.js.LICENSE.txt"
+    "static/css/main.d8f848da.chunk.css.map": "/testWrok/static/css/main.d8f848da.chunk.css.map",
+    "static/js/2.b666e95e.chunk.js.LICENSE.txt": "/testWrok/static/js/2.b666e95e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.10db168f.js",
     "static/css/2.c79dbdbc.chunk.css",
-    "static/js/2.cb003bcb.chunk.js",
-    "static/css/main.027366a9.chunk.css",
-    "static/js/main.8a5b9911.chunk.js"
+    "static/js/2.b666e95e.chunk.js",
+    "static/css/main.d8f848da.chunk.css",
+    "static/js/main.ed75dff7.chunk.js"
   ]
 }
