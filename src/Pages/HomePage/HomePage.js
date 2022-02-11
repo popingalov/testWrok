@@ -2,7 +2,7 @@ import s from './HomePage.module.css';
 
 export default function Home() {
   return (
-    <main>
+    <main className={s.main}>
       <div className="container">
         {' '}
         <section className={s.home}>

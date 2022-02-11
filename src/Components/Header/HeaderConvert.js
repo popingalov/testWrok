@@ -19,7 +19,6 @@ export default function HeaderConvert() {
     })();
   }, []);
   const cc = obj?.map(el => {
-    console.log(el);
     return (
       <li key={el.text}>
         <p>{el.text}</p>
@@ -27,6 +26,6 @@ export default function HeaderConvert() {
       </li>
     );
   });
-  console.log(cc);
+
   return <ul className={s.headerConv}>{cc}</ul>;
 }

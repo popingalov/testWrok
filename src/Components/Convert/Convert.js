@@ -36,6 +36,7 @@ export default function Convert() {
 
       setObj(result);
     })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -55,6 +56,7 @@ export default function Convert() {
       const calc = round((st / en) * startValue);
       setResults({ result: calc });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startValue, startInp.value, endInp.value]);
 
   useEffect(() => {
@@ -67,6 +69,7 @@ export default function Convert() {
 
     const calc = endValue / (st / en);
     setStartValue(calc);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [endValue]);
 
   const cc = currencys.map((el, idx) => {
