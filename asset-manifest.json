@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/testWrok/static/css/main.eaa2bfdc.chunk.css",
-    "main.js": "/testWrok/static/js/main.7b30a41c.chunk.js",
-    "main.js.map": "/testWrok/static/js/main.7b30a41c.chunk.js.map",
+    "main.css": "/testWrok/static/css/main.60a5d3d7.chunk.css",
+    "main.js": "/testWrok/static/js/main.1073fe76.chunk.js",
+    "main.js.map": "/testWrok/static/js/main.1073fe76.chunk.js.map",
     "runtime-main.js": "/testWrok/static/js/runtime-main.10db168f.js",
     "runtime-main.js.map": "/testWrok/static/js/runtime-main.10db168f.js.map",
     "static/css/2.c79dbdbc.chunk.css": "/testWrok/static/css/2.c79dbdbc.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.41980a03.chunk.js.map": "/testWrok/static/js/2.41980a03.chunk.js.map",
     "index.html": "/testWrok/index.html",
     "static/css/2.c79dbdbc.chunk.css.map": "/testWrok/static/css/2.c79dbdbc.chunk.css.map",
-    "static/css/main.eaa2bfdc.chunk.css.map": "/testWrok/static/css/main.eaa2bfdc.chunk.css.map",
+    "static/css/main.60a5d3d7.chunk.css.map": "/testWrok/static/css/main.60a5d3d7.chunk.css.map",
     "static/js/2.41980a03.chunk.js.LICENSE.txt": "/testWrok/static/js/2.41980a03.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.10db168f.js",
     "static/css/2.c79dbdbc.chunk.css",
     "static/js/2.41980a03.chunk.js",
-    "static/css/main.eaa2bfdc.chunk.css",
-    "static/js/main.7b30a41c.chunk.js"
+    "static/css/main.60a5d3d7.chunk.css",
+    "static/js/main.1073fe76.chunk.js"
   ]
 }
