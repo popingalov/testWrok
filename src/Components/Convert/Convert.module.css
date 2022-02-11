@@ -1,0 +1,29 @@
+.uiPanel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  gap: 10px;
+}
+.inputContainer {
+  position: relative;
+}
+.currency {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 30%;
+  right: 1px;
+  height: auto;
+  top: 2px;
+  border: none;
+  background-color: inherit;
+  /* border-left: 1px solid black; */
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 23px;
+}

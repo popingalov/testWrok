@@ -5,13 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
+  background-color: red;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-#root {
-  width: 100vw;
+
+p {
+  text-align: justify;
+}
+.container {
+  margin: 0 auto;
+  width: 882px;
+}
+input {
+  display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
