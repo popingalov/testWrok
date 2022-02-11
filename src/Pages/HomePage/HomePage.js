@@ -1,11 +1,11 @@
 import s from './HomePage.module.css';
-
+import { MyDarling } from 'Components';
 export default function Home() {
   return (
     <main className={s.main}>
       <div className="container">
-        {' '}
         <section className={s.home}>
+          <MyDarling />
           <h2>Lorem</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
