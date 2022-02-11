@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-content: flex-start;
+  justify-content: center;
+  padding: 10px;
   gap: 10px;
 }
 .inputContainer {

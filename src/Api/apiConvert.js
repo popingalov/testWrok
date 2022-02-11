@@ -17,5 +17,6 @@ export async function takeObj() {
   }, {});
 
   result.UAH = 1;
+
   return result;
 }
